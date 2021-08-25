@@ -1,17 +1,31 @@
 // == Import npm
 import React from 'react';
+import { useState } from 'react';
+import Header from '../Header';
+import Intro from '../Intro';
+import Portfolio from '../Portfolio';
+import Works from '../Works';
+import Contact from '../Contact';
 
 // == Import
-import reactLogo from './react-logo.svg';
-import './styles.css';
+import './styles.scss';
 
 // == Composant
-const App = () => (
-  <div className="app">
-    <img src={reactLogo} alt="react logo" />
-    <h1>Composant : App</h1>
-  </div>
-);
+const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  return (
+    <div className="app">
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      <div className="sections">
+        <Intro />
+        <Portfolio />
+        <Works />
+        <Contact />
+      </div>
+    </div>
+  );
+};
 
 // == Export
 export default App;
