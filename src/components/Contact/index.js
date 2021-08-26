@@ -5,8 +5,8 @@ import './styles.scss';
 
 // == Composant
 const Contact = () => (
-  <div className="contact" id="intro">
-    
+  <div className="contact" id="contact">
+    Contact
   </div>
 );
 

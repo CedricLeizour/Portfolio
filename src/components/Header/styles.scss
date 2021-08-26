@@ -48,7 +48,7 @@
     }
 
     .right {
-      .menu {
+      .burger {
         display: flex;
         width: 32px;
         height: 25px;
@@ -56,6 +56,7 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+        
         
 
         span {
@@ -73,7 +74,7 @@
     background-color: vars.$mainColor;
     color: white;
 
-    .menu {
+    .burger {
       span {
         &:first-child {
           background-color: white;
