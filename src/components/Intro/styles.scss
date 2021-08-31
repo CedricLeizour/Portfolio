@@ -1,4 +1,64 @@
+@use 'src/styles/vars';
+
 .intro {
-  background-color: mediumvioletred;
-  
+ background-color: vars.$mainColor;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ color: white;
+ font-size: 3em;
+ position: relative;
+
+
+    .presentation {
+      margin-bottom: 3em;
+      font-size: 1.5em;
+      font-weight: 500;
+      opacity: 0.9;
+      z-index: 2;
+      display: flex;
+      align-items: center; 
+      justify-content: center;
+      flex-direction: column;
+      
+      
+      .bienvenue {
+        font-size: 0.5em;
+        margin-bottom: 4em;
+        
+        
+        
+      }
+      .name{
+        font-size: 1.2em;
+        margin-bottom: 0.2em;
+        color: orange;
+        
+      }
+
+      .dev {
+        font-size: 0.5em;
+        font-style: italic; 
+      }
+    }
+   
+ #videoBG {
+  position:absolute;
+  width: 100%;
+  left: 50%;
+  top: 50%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  opacity: 0.7;
+ }
+ 
 }
+    
+  
+
+
+
+

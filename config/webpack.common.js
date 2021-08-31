@@ -72,6 +72,33 @@ module.exports = {
           },
         ],
       },
+      {
+        test: /\.mp3$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'sound/',
+          name: '[path][name].[ext]',
+        },
+      },
+       // Videos
+      {
+        test: /\.mp4$/,
+        use: [
+            {
+              loader: 'file-loader',
+              options: { outputPath: 'videos/' },
+            },
+          ],
+      },
     ],
   },
 };
+
+
+
+
+
+
+
+
+

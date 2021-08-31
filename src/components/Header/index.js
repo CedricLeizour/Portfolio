@@ -1,6 +1,6 @@
 // == Import npm
 import React from 'react';
-import { Phone, Mail } from '@material-ui/icons';
+import { GitHub, LinkedIn } from '@material-ui/icons';
 
 // == Import
 import './styles.scss';
@@ -12,15 +12,15 @@ const Header = ({ menuOpen, setMenuOpen }) => (
     <div className="wrapper">
       <div className="left">
         <a href="#intro" className="logo">
-          Cédric Leizour
+          C.L
         </a>
         <div className="itemContainer">
-          <Phone className="icon" />
-          <span>0649852347</span>
+          <GitHub className="icon" />
+          <a href='https://github.com/CedricLeizour'><span>Profil GitHub</span></a>
         </div>
         <div className="itemContainer">
-          <Mail className="icon" />
-          <span>cedricleizour@gmail.com</span>
+          <LinkedIn className="icon" />
+          <a href='https://www.linkedin.com/in/cédric-leizour/'><span>Profil LinkedIn</span></a>
         </div>
       </div>
       <div className="right">
