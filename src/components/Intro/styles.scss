@@ -33,13 +33,33 @@
       .name{
         font-size: 1.2em;
         margin-bottom: 0.2em;
-        color: orange;
-        
+        color: orange ;       
       }
 
       .dev {
         font-size: 0.5em;
         font-style: italic; 
+      }
+
+      .anim {
+        color: orange;
+      }
+      
+      .ityped-cursor {
+        color: orange;
+        animation: blink 0.8s infinite;
+        font-style: normal;
+      }
+
+      @keyframes blink {
+        50%{
+          opacity: 1;
+        }
+
+        100%{
+          opacity: 0;
+        }
+          
       }
     }
    

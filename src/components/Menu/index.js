@@ -4,17 +4,17 @@ import './styles.scss';
 
 const Menu = ( {menuOpen, setMenuOpen} ) => (
   <div className={"menu "+ (menuOpen && "active")}>
-    <ul onClick={() => setMenuOpen(false)}>
-      <li>
+    <ul>
+      <li onClick={() => setMenuOpen(false)}>
         <a href="#intro">Accueil</a>
       </li>
-      <li>
+      <li onClick={() => setMenuOpen(false)}>
         <a href="#portfolio">Portfolio</a>
       </li>
-      <li>
+      <li onClick={() => setMenuOpen(false)}>
         <a href="#works">Works</a>
       </li>
-      <li>
+      <li onClick={() => setMenuOpen(false)}>
         <a href="#contact">Contact</a>
       </li>
     </ul>
