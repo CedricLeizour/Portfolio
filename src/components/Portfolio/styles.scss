@@ -18,10 +18,18 @@
     list-style: none;
     display: flex;
 
-    li {
+    .portfolioList {
       font-size: 14px;
       padding: 1em;
       margin: 1em;
+      cursor: pointer;
+
+      &.active {
+        background-color: vars.$mainColor;
+        color: white;
+        border-radius: 15px;
+        font-weight: bolder;
+      }
     }
   }
 

@@ -1,7 +1,7 @@
 @use 'src/styles/vars';
 
 .menu {
-  width: 300px;
+  width: 250px;
   height: 100vh;
   background-color: vars.$mainColor;
   position: fixed;
@@ -31,6 +31,7 @@
 
     li {
       margin-bottom: 2em;
+      
 
       a {
         text-decoration: none;
