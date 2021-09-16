@@ -1,5 +1,6 @@
 // == Import npm
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { GitHub, LinkedIn } from '@material-ui/icons';
 
 // == Import
@@ -11,9 +12,7 @@ const Header = ({ menuOpen, setMenuOpen }) => (
   <div className={"header " + (menuOpen && "active")}>
     <div className="wrapper">
       <div className="left">
-        <a href="#intro" className="logo">
-          C.L
-        </a>
+        <a href="/" className="logo">C.L</a>
         <div className="itemContainer">
           <GitHub className="icon" />
           <a href='https://github.com/CedricLeizour'><span>Profil GitHub</span></a>
@@ -24,10 +23,10 @@ const Header = ({ menuOpen, setMenuOpen }) => (
         </div>
       </div>
       <div className="right">
-        <div className="burger" onClick={()=> setMenuOpen(!menuOpen)}>
-          <span className="line1"></span>
-          <span className="line2"></span>
-          <span className="line3"></span>
+        <div className="burger" onClick={() => setMenuOpen(!menuOpen)}>
+          <span className="line1" />
+          <span className="line2" />
+          <span className="line3" />
         </div>
       </div>
     </div>

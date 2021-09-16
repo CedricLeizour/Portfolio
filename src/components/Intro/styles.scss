@@ -21,6 +21,13 @@
       align-items: center; 
       justify-content: center;
       flex-direction: column;
+
+      .myFace {
+        width: 20%;
+        border-radius: 50%;
+        margin-bottom: 1.1em;
+        
+      }
       
       
       .bienvenue {

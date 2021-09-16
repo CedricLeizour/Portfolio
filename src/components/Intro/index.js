@@ -1,6 +1,7 @@
 // == Import npm
 import React from 'react';
 import VideoIntro from 'src/assets/videos/test.mp4';
+import Image from 'src/assets/images/photo pro.jpg';
 import { init } from 'ityped';
 import { useEffect, useRef } from 'react';
 
@@ -25,7 +26,7 @@ const Intro = () => {
   return (
     <div className="intro" id="intro">
       <div className="presentation" id="presentation">
-        <p className="bienvenue"> Bienvenue sur mon portfolio :)</p>
+        <img className="myFace" src={Image} alt="test" />
         <h1 className="name">Cédric Leizour</h1>
         <h2 className="dev">Développeur web JavaScript <span className="anim" ref={textRef} /></h2>
       </div>

@@ -1,6 +1,7 @@
 // == Import npm
 import React, { useState } from 'react';
-import Image from 'src/assets/images/photo pro.jpg';
+import { Link } from 'react-router-dom';
+import Image from 'src/assets/images/Oboardgame.png';
 import PortfolioList from './portfolioList';
 
 
@@ -12,8 +13,8 @@ const Portfolio = () => {
   const [selected, setSelected] = useState('featured');
   const list = [
     {
-      id: 'featured',
-      title: 'Featured',
+      id: 'todolist',
+      title: 'ToDoList JS Natif',
     },
     {
       id: 'featured2',
@@ -46,13 +47,14 @@ const Portfolio = () => {
             title={item.title}
             active={selected === item.id}
             setSelected={setSelected}
+            id={item.id}
           />
         ))}
       </ul>
       <div className="container">
         <div className="item">
           <img src={Image} alt="test" />
-          <h3>Projet 0</h3>
+          <h3>ToDoList</h3>
         </div>
         <div className="item">
           <img src={Image} alt="test" />
@@ -75,7 +77,9 @@ const Portfolio = () => {
           <h3>Projet 5</h3>
         </div>
       </div>
+         <Link to="/details">Details</Link>
     </div>
+    
   );
 };
 // == Export
