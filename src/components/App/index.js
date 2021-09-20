@@ -1,11 +1,10 @@
 // == Import npm
-import React from 'react';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter as Router,
   Switch,
   Route,
-} from "react-router-dom";
+} from 'react-router-dom';
 import Header from '../Header';
 import Menu from '../Menu';
 import Intro from '../Intro';
@@ -13,8 +12,6 @@ import Portfolio from '../Portfolio';
 import Works from '../Works';
 import Contact from '../Contact';
 import Details from '../Details';
-
-
 
 // == Import
 import './styles.scss';

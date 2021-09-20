@@ -1,43 +1,53 @@
 // == Import npm
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import Image from 'src/assets/images/Oboardgame.png';
+import { AllProjects, JavascriptProjects, ReactProjects } from '../../projectsData';
 import PortfolioList from './portfolioList';
-
 
 // == Import
 import './styles.scss';
 
 // == Composant
 const Portfolio = () => {
-  const [selected, setSelected] = useState('featured');
+  const [selected, setSelected] = useState('all');
+  const [data, setData] = useState([]);
   const list = [
     {
-      id: 'todolist',
-      title: 'ToDoList JS Natif',
+      id: 'all',
+      title: 'Tous mes projets',
     },
     {
-      id: 'featured2',
-      title: 'Featured2',
+      id: 'js',
+      title: 'Projets JavaScript',
     },
     {
-      id: 'featured3',
-      title: 'Featured3',
+      id: 'react',
+      title: 'Projets React',
     },
     {
-      id: 'featured4',
-      title: 'Featured4',
-    },
-    {
-      id: 'featured5',
-      title: 'Featured5',
-    },
-    {
-      id: 'featured6',
-      title: 'Featured6',
+      id: 'react-redux',
+      title: 'Projets React-Redux',
     },
   ];
 
+  useEffect(() => {
+    switch (selected) {
+      case "all":
+        setData(AllProjects);
+        break;
+      case "js":
+        setData(JavascriptProjects);
+        break;
+      case "react":
+        setData(ReactProjects);
+        break;
+      case "react-redux":
+        setData(ReactReduxProjects);
+        break;
+      default:
+        setData(AllProjects);
+    }
+  }, [selected]);
   return (
     <div className="portfolio" id="portfolio">
       <h1>Mes Projets</h1>
@@ -52,34 +62,15 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="container">
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>ToDoList</h3>
-        </div>
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>Projet 1</h3>
-        </div>
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>Projet 2</h3>
-        </div>
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>Projet 3</h3>
-        </div>
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>Projet 4</h3>
-        </div>
-        <div className="item">
-          <img src={Image} alt="test" />
-          <h3>Projet 5</h3>
-        </div>
+        {data.map((projectsData) => (
+          <div className="item">
+            <img src={projectsData.image} alt="test" />
+            <h3>{projectsData.title}</h3>
+          </div>
+        ))}
       </div>
-         <Link to="/details">Details</Link>
+      <Link to="/details">Details</Link>
     </div>
-    
   );
 };
 // == Export
