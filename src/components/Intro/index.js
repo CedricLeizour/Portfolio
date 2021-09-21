@@ -1,9 +1,8 @@
 // == Import npm
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import VideoIntro from 'src/assets/videos/test.mp4';
 import Image from 'src/assets/images/photo pro.jpg';
 import { init } from 'ityped';
-import { useEffect, useRef } from 'react';
 
 // == Import
 

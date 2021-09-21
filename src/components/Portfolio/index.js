@@ -62,9 +62,9 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="container">
-        {data.map((projectsData) => (
+        {AllProjects && data.map((projectsData) => (
           <div className="item">
-            <img src={projectsData.image} alt="test" />
+            <img src={projectsData.image} alt="projet" />
             <h3>{projectsData.title}</h3>
           </div>
         ))}
