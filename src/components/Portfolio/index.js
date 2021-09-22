@@ -1,6 +1,5 @@
 // == Import npm
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 import { AllProjects, JavascriptProjects, ReactProjects } from '../../projectsData';
 import PortfolioList from './portfolioList';
 
@@ -50,7 +49,7 @@ const Portfolio = () => {
   }, [selected]);
   return (
     <div className="portfolio" id="portfolio">
-      <h1>Mes Projets</h1>
+      <h1>Mon Portfolio</h1>
       <ul>
         {list.map((item) => (
           <PortfolioList
@@ -69,7 +68,6 @@ const Portfolio = () => {
           </div>
         ))}
       </div>
-      <Link to="/details">Details</Link>
     </div>
   );
 };

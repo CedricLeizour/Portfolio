@@ -12,7 +12,10 @@ const Menu = ( {menuOpen, setMenuOpen} ) => (
         <a href="#portfolio">Portfolio</a>
       </li>
       <li onClick={() => setMenuOpen(false)}>
-        <a href="#works">Works</a>
+        <a href="#détails">Projets</a>
+      </li>
+      <li onClick={() => setMenuOpen(false)}>
+        <a href="#compétences">Compétences</a>
       </li>
 <li onClick={() => setMenuOpen(false)}>
         <a href="#contact">Contact</a>
@@ -33,7 +36,7 @@ export default Menu;
         <a href="#portfolio">Portfolio</a>
       </li>
       <li onClick={() => setMenuOpen(false)}>
-        <a href="#works">Works</a>
+        <a href="#compétences">Compétences</a>
       </li>
 <li onClick={() => setMenuOpen(false)}>
         <a href="#contact">Contact</a>

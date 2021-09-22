@@ -1,0 +1,131 @@
+@use 'src/styles/vars';
+
+.details {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  ul {
+    margin: 1em;
+    padding: 0;
+    list-style: none;
+    display: flex;
+
+    .portfolioList {
+      font-size: 14px;
+      padding: 1em;
+      margin: 1em;
+      cursor: pointer;
+
+      &.active {
+        background-color: vars.$mainColor;
+        color: white;
+        border-radius: 15px;
+        font-weight: bolder;
+      }
+    }
+  }
+
+  .container{
+
+    display: flex;
+    width: 100%;
+    
+    .left {
+      display: flex;
+      flex: 1;
+      height: 60vh;
+      overflow: hidden;
+      justify-content: center;
+      align-items: center;
+      
+      img {
+        width: 70%;
+        height: 75%;
+        border-radius: 5%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      }
+    }
+
+    .right {
+      display: flex;
+      flex: 1;
+      height: 60vh;
+      width: 100%;
+      overflow: hidden;
+      justify-content:center;
+      align-items: center;
+      flex-direction: column;
+      position: relative;
+      flex-wrap: wrap;
+      
+        
+        .title {
+          font-size: 2rem;
+          color: vars.$mainColor;
+          font-weight: bold;
+          position: absolute;
+          top:0;
+        }
+        
+        .content {
+          margin-bottom: 50px;
+          width: 60%;
+          
+          
+
+          .details-title {
+            color: orange;
+            font-size: 1.5rem;
+          }
+    
+          .details-content {
+            font-size: 1.2rem;
+            margin: 1rem;
+                  
+          }
+        }
+        
+  
+        .button {
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          position: absolute;
+          bottom: 0;
+        } 
+  
+        .button-link {
+          display: flex;
+          margin: 2rem;
+          margin-bottom: 10px;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+          width: 180px;
+          height: 80px;
+          color: white;
+          background-color: vars.$mainColor;
+          border: none;
+          border-radius: 10px;
+          font-weight: 500;
+          cursor: pointer;
+          padding: 1rem;
+  
+          &:hover {
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            font-weight: 800;
+            background-color: white;
+            border: 2px solid vars.$mainColor;
+            color: vars.$mainColor;
+            
+    }
+    }
+  } 
+  }
+}
