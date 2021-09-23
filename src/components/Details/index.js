@@ -1,6 +1,13 @@
 // == Import npm
 import React, { useState, useEffect } from 'react';
-import { AllProjects, ToDoList, Converter, Annuaire } from '../../projectsData';
+import {
+  AllProjects,
+  ToDoList,
+  Converter,
+  Annuaire,
+  Chatroom,
+  Oboardgame,
+} from '../../projectsData';
 import DetailsList from './detailsList';
 
 // == Import
@@ -18,11 +25,19 @@ const Details = () => {
     },
     {
       id: 'converter',
-      title: 'Convertisseur de monnaie',
+      title: 'Converter React',
     },
     {
       id: 'annuaire',
-      title: 'Annuaire Github',
+      title: 'Annuaire Github API',
+    },
+    {
+      id: 'chatroom',
+      title: 'Chatroom React Redux',
+    },
+    {
+      id: 'oboardgame',
+      title: 'Projet Oboardgame',
     },
   ];
 
@@ -36,6 +51,12 @@ const Details = () => {
         break;
       case ('annuaire'):
         setData(Annuaire);
+        break;
+      case ('chatroom'):
+        setData(Chatroom);
+        break;
+      case ('oboardgame'):
+        setData(Oboardgame);
         break;
       default:
         setData(ToDoList);
@@ -62,22 +83,19 @@ const Details = () => {
           <div className="right">
             <h3 className="title">{projectsData.title}</h3>
             <div className="content">
-            <p className="details-title">Description du projet</p>
-            <p className="details-content">{projectsData.description}</p>
-            <p className="details-title">Technologies utilisées</p>
-            <p className="details-content">{projectsData.technos}</p>
-            <p className="details-title">Technologies utilisées</p>
-            <p className="details-content">{projectsData.technos}</p>
-            <p className="details-title">Technologies utilisées</p>
-            <p className="details-content">{projectsData.technos}</p>
+              <p className="details-title">Description du projet</p>
+              <p className="details-content">{projectsData.description}</p>
+              <p className="details-title">Technologies utilisées</p>
+              <p className="details-content">{projectsData.technos}</p>
+              {projectsData.contexte && <p className="details-title">Contexte</p>}
+              {projectsData.contexte && <p className="details-content">{projectsData.contexte}</p>}
             </div>
             <div className="button">
-              <a href={projectsData.link}><span className="button-link">Voir le projet en ligne</span></a>
+            {projectsData.link && <a href={projectsData.link}><span className="button-link">Voir le projet en ligne</span></a>}
               <a href={projectsData.repo}><span className="button-link">Voir le repository Github</span></a>
             </div>
-            </div>
           </div>
-          
+        </div>
       ))}
     </div>
   );

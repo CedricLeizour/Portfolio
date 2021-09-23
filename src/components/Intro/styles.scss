@@ -21,11 +21,23 @@
       align-items: center; 
       justify-content: center;
       flex-direction: column;
+  
 
-      .myFace {
-        width: 20%;
-        border-radius: 50%;
-        margin-bottom: 1.1em;
+      .préambule {
+        display: flex;
+        color: white;
+        font-style: italic;
+        font-size: 0.5em;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 5em;
+        flex-direction: column;
+        letter-spacing: 1px;
+        opacity: 0.9;
+        
+        
+        
         
       }
       

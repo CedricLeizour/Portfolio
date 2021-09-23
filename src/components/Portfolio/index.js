@@ -1,6 +1,6 @@
 // == Import npm
 import React, { useState, useEffect } from 'react';
-import { AllProjects, JavascriptProjects, ReactProjects } from '../../projectsData';
+import { AllProjects, JavascriptProjects, ReactProjects, ReactReduxProjects } from '../../projectsData';
 import PortfolioList from './portfolioList';
 
 // == Import

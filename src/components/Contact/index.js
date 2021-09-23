@@ -8,6 +8,7 @@ const Contact = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [thanks, setThanks] = useState('');
 
   const sendFeedback = (templateId, variables) => {
     window.emailjs
@@ -21,10 +22,13 @@ const Contact = () => {
   };
 
   const handleSubmit = (event) => {
+    if (message !== '') {
     event.preventDefault();
     setName('');
     setEmail('');
     setMessage('');
+    setThanks('Merci pour votre message, je tâcherai de vous répondre rapidement !');
+    };
 
     sendFeedback('template_ttozg8m', {
       name,
@@ -40,7 +44,9 @@ const Contact = () => {
       </div>
       <div className="right">
         <h2>Contact</h2>
-        <form onSubmit={handleSubmit}>
+        <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="contact-input">
+        <label className="contact-label" for="name"> Votre nom : </label>
           <input
             onChange={(event) => setName(event.target.value)}
             type="text"
@@ -49,6 +55,9 @@ const Contact = () => {
             placeholder="Votre nom"
             required="true"
           />
+        </div>
+        <div className="contact-input">
+        <label className="contact-label" for="name"> Votre email : </label>
           <input
             onChange={(event) => setEmail(event.target.value)}
             type="email"
@@ -57,14 +66,19 @@ const Contact = () => {
             placeholder="Votre adresse mail"
             required="true"
           />
+        </div>
+        <div className="contact-input">
+        <label className="contact-label" for="message"> Votre message :</label>
           <textarea
             onChange={(event) => setMessage(event.target.value)}
             value={message}
             placeholder="Votre message..."
             required="true"
+            id="message"
           />
+        </div>
           <button type="submit">Envoyer</button>
-          {/* <span>Merci pour votre message, je vous réponds dès que possible !</span> */}
+          {<span>{thanks}</span>}
         </form>
       </div>
     </div>
