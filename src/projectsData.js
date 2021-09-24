@@ -31,7 +31,7 @@ const AllProjects = [
   {id: 5,
     title: "Projet Oboardgame",
     repo: "https://github.com/CedricLeizour/Projet-Oboardgame",
-    image: "./assets/images/Oboardgame.png",
+    image: "./assets/images/Oboardgame",
     description:"Oboardgame est un site de petites annonces de location de jeux de sociétés entre particuliers, développé avec React Redux et Node JS.",
     contexte:"J'ai développé ce projet en un mois avec l'aide précieuse de 4 camarades durant ma formation chez O'Clock. J'occupais le poste de développeur Front-end ainsi que celui de Scrum Master.",
     technos: "JavaScript - React - React Redux - Axios - Sass - Webpack - Babel // NodeJS - PostgreSQL - Express - Sqitch",
@@ -44,7 +44,7 @@ const JavascriptProjects = [
     id: 1,
     title: "To Do List Javascript",
     link: "https://cedricleizour-todolist.netlify.app",
-    image: 'https://pixabay.com/images/id-6322036/',
+    image: './assets/images/todolist.png',
     description:"Application de todolist, développée en Javascript natif"
   },
 ];
@@ -88,7 +88,7 @@ const ToDoList = [
   {
     id: 1,
     title: "To Do List Javascript",
-    link: "https://cedricleizour-todolist.netlify.app",
+    link: 'https://cedricleizour-todolist.netlify.app/',
     image: './assets/images/todolist.png',
     description:"Cette application de Todolist permet d'ajouter des tâches à votre liste et de gérer les tâches présentes. Cette application a été développée en Javascript natif.",
     technos:"JavaScript - HTML5 - CSS3",
@@ -134,14 +134,12 @@ const Oboardgame = [
   {id: 1,
     title: "Projet Oboardgame",
     repo: "https://github.com/CedricLeizour/Projet-Oboardgame",
-    image: "./assets/images/Oboardgame.png",
+    image: "./assets/images/Oboardgame",
     description:"Oboardgame est un site de petites annonces de location de jeux de sociétés entre particuliers, développé avec React Redux et Node JS.",
     contexte:"J'ai développé ce projet en un mois avec l'aide précieuse de 4 camarades durant ma formation chez O'Clock. J'occupais le poste de développeur Front-end ainsi que celui de Scrum Master.",
     technos: "JavaScript - React - React Redux - Axios - Sass - Webpack - Babel ----- NodeJS - PostgreSQL - Express - Sqitch",
-    
 },
 ];
-
 
 export {
   AllProjects,

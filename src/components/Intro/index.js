@@ -17,7 +17,7 @@ const Intro = () => {
       backSpeed: 50,
       backDelay: 1000,
       startDelay: 800,
-      strings: ['motivé', 'curieux', 'disponible'],
+      strings: ['motivé', 'curieux', 'passionné', 'disponible'],
     });
   }, []);
 

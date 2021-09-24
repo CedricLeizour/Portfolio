@@ -1,3 +1,64 @@
+@use 'src/styles/vars';
+
 .compétences {
-  background-color: yellow;
+  background-color: white;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  flex-direction: column;
+
+  .title {
+    font-size: 50px;
+
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 70%;
+    margin: 1em;
+    flex-wrap: wrap;
+    
+    
+    
+    
+
+    .element {
+      padding: 2em;
+      border: 2px solid vars.$mainColor;
+      border-radius: 20px;
+      display: flex;
+      width: 100px;
+      height: 100px;
+      margin: 1em;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+      &:hover {
+        border: 2px solid orange;
+      }
+      
+      
+      .element-icon {
+        width: 40%;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 1em;
+        
+      }
+
+      .element-name {
+       
+        justify-content: center;
+        align-items: center;
+        color: vars.$mainColor;
+        font-weight: bold;
+       
+      }
+    }
+  }
 }
