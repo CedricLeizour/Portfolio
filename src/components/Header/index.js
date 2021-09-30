@@ -14,12 +14,13 @@ const Header = ({ menuOpen, setMenuOpen }) => (
       <div className="left">
         <a href="/" className="logo">C.L</a>
         <div className="itemContainer">
-          <GitHub className="icon" />
-          <a href='https://github.com/CedricLeizour'><span>Profil GitHub</span></a>
+        <a href='https://github.com/CedricLeizour'>
+         <GitHub className="icon-github" /><span className="profil">Profil GitHub</span></a>
         </div>
         <div className="itemContainer">
-          <LinkedIn className="icon" />
-          <a href='https://www.linkedin.com/in/cédric-leizour/'><span>Profil LinkedIn</span></a>
+          <a href='https://www.linkedin.com/in/cédric-leizour/'>
+            <LinkedIn className="icon-linkedin" /><span className="profil">Profil LinkedIn</span>
+          </a>
         </div>
       </div>
       <div className="right">

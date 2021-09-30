@@ -6,8 +6,15 @@
   flex-direction: column;
   align-items: center;
 
+
   h1 {
     font-size: 50px;
+
+    @include vars.mobile {     
+      font-size: 30px;
+      text-align: center;
+      margin-bottom: 5px;   
+   }
   }
 
   ul {
@@ -16,11 +23,31 @@
     list-style: none;
     display: flex;
 
+    @include vars.mobile {     
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-bottom: 5px;  
+   }
+
     .portfolioList {
       font-size: 14px;
       padding: 1em;
       margin: 1em;
       cursor: pointer;
+
+      @include vars.mobile {
+        display: flex;     
+        width: 27%;
+        font-size: 12px;
+        text-align: center;
+        padding: 0.5em;
+        margin: 0.4em; 
+        align-items: center;
+        justify-content: center;
+          
+     }
 
       &.active {
         background-color: vars.$mainColor;
@@ -36,49 +63,88 @@
     display: flex;
     width: 100%;
     
+    
     .left {
       display: flex;
       flex: 1;
-      height: 60vh;
+      height: 70vh;
       overflow: hidden;
       justify-content: center;
       align-items: center;
+      
+      @include vars.mobile {
+        flex: 0;
+          
+     }
       
       img {
         width: 70%;
         height: 75%;
         border-radius: 5%;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+        @include vars.mobile {
+          display: none;
+            
+       }
       }
     }
 
     .right {
       display: flex;
       flex: 1;
-      height: 60vh;
+      height: 80vh;
+      width: 80vw;
       overflow: hidden;
       justify-content:center;
       align-items: center;
       flex-direction: column;
-      position: relative;
-      flex-wrap: wrap;
+      
+
+      @include vars.mobile {
+        width: 100%;
+        text-align: center;
+          
+     }
       
       
       
         
-        .title {
-          font-size: 2rem;
-          color: vars.$mainColor;
-          font-weight: bold;
-          position: absolute;
-          top:0;
-        }
         
         .content {
-          margin-bottom: 50px;
-          width: 60%;
+          width: 80%;
+          height: 100%;
+          font-size: 1rem;
+          justify-content:center;
+          align-items: center;
+          flex-direction: column;
+          margin-right: 4rem;
+
+
+          @include vars.mobile {
+            width: 100%;
+            text-align: center;
+            margin:0;
+            
+              
+         }
           
           
+          .title {
+            font-size: 2rem;
+            display: flex;
+            justify-content: center;
+            color: vars.$mainColor;
+            font-weight: bold;
+            margin-top: 3rem;
+
+            @include vars.mobile {     
+              font-size: 28px;
+              text-align: center;
+              margin-top: 0.5rem; 
+           }
+            
+          }
           
 
           .details-title {
@@ -86,51 +152,93 @@
             font-size: 1.5rem;
             font-style: italic;
             letter-spacing: 1px;
+            margin-top: 2rem;
+
+            @include vars.mobile {     
+              font-size: 18px;
+              margin-top: 1rem;
+              letter-spacing: normal;
+              
+           }
+            
+            
           }
     
           .details-content {
             font-size: 1.2rem;
             margin: 1rem;
             letter-spacing: 1px;
-                  
+
+            @include vars.mobile {     
+              letter-spacing: normal;
+              font-size: 13px;
+              margin: 0.5em;
+           }  
           }
+
+          .links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+
+            @include vars.mobile {
+              width: 100%;
+              height: 15%;
+              text-align: center;
+              justify-content: space-around;
+              
+              
+           }
+  
+            .button-link {
+              display: flex;
+              font-size: 1rem;
+              margin: 2rem;
+              margin-bottom: 10px;
+              justify-content: center;
+              align-items: center;
+              text-align: center;
+              min-width: 100px;
+              width: 50%;
+              height: 100%;
+              color: white;
+              background-color: vars.$mainColor;
+              border: none;
+              border-radius: 10px;
+              font-weight: 500;
+              cursor: pointer;
+              padding: 0.8rem;
+
+              @include vars.mobile {
+                width: 40%;
+                height: 50%;
+                text-align: center;
+                display: flex;
+                justify-content: space-around;
+                font-size: 12px; 
+                padding: 1px;
+                margin: 0;
+                
+             }
+              
+      
+              &:hover {
+                box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                font-weight: 800;
+                background-color: white;
+                border: 1px solid vars.$mainColor;
+                color: vars.$mainColor;
+                
+        }
         }
         
   
-        .button {
-          display: flex;
-          justify-content: space-around;
-          align-items: center;
-          position: absolute;
-          bottom: 0;
+        
+      }
         } 
   
-        .button-link {
-          display: flex;
-          margin: 2rem;
-          margin-bottom: 10px;
-          justify-content: center;
-          align-items: center;
-          text-align: center;
-          width: 180px;
-          height: 80px;
-          color: white;
-          background-color: vars.$mainColor;
-          border: none;
-          border-radius: 10px;
-          font-weight: 500;
-          cursor: pointer;
-          padding: 1rem;
-  
-          &:hover {
-            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-            font-weight: 800;
-            background-color: white;
-            border: 2px solid vars.$mainColor;
-            color: vars.$mainColor;
-            
-    }
-    }
+        
   } 
   }
 }

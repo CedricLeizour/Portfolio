@@ -81,18 +81,18 @@ const Details = () => {
             <img src={projectsData.image} alt="projet" />
           </div>
           <div className="right">
-            <h3 className="title">{projectsData.title}</h3>
             <div className="content">
+            <h3 className="title">{projectsData.title}</h3>
               <p className="details-title">Description du projet</p>
               <p className="details-content">{projectsData.description}</p>
               <p className="details-title">Technologies utilisées</p>
               <p className="details-content">{projectsData.technos}</p>
               {projectsData.contexte && <p className="details-title">Contexte</p>}
               {projectsData.contexte && <p className="details-content">{projectsData.contexte}</p>}
+              <div className="links">
+              {projectsData.link && <span className="button-link"><a href={projectsData.link}>Voir le projet en ligne</a></span>}
+              <span className="button-link"><a href={projectsData.repo}>Voir le repository Github</a></span>
             </div>
-            <div className="button">
-            {projectsData.link && <a href={projectsData.link}><span className="button-link">Voir le projet en ligne</span></a>}
-              <a href={projectsData.repo}><span className="button-link">Voir le repository Github</span></a>
             </div>
           </div>
         </div>

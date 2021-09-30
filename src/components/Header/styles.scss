@@ -7,7 +7,7 @@
   color: vars.$mainColor;
   position: fixed;
   top: 0;
-  z-index: 3;
+  z-index: 5;
   transition: all 0.8s ease;
 
   .wrapper {
@@ -16,6 +16,11 @@
     align-items: center;
     justify-content: space-between;
     margin-top: 5px;
+
+    @include vars.mobile {
+      justify-content: space-between;
+      padding: 5px 10px;
+   }
 
     .left {
       display: flex;
@@ -26,25 +31,53 @@
         font-weight: 700;
         text-decoration: none;
         color: inherit;
-        margin-right: 40px;
+        margin-right: 3rem;
+        
+        @include vars.mobile {
+          margin:0;
+          
+       }
       }
 
       .itemContainer {
         display: flex;
         align-items: center;
         margin-left: 30px;
-
-        .icon {
+        
+      
+        .icon-github {
           font-size: 25px;
           margin-right: 5px;
+
+          @include vars.mobile {
+            font-size: 30px;
+         }
+          
         }
 
-        span {
+        .icon-linkedin {
+          font-size: 27px;
+          margin-right: 5px;
+
+          @include vars.mobile {
+            font-size: 38px;
+         }
+        }
+
+        .profil {
           font-size: 15px;
           font-weight: 500;
-          margin-right: 30px;
+          
+          
+          
+
+          @include vars.mobile {
+            display: none;
+         }
         }
-      }
+
+        
+    }
     }
 
     .right {
@@ -56,6 +89,11 @@
         flex-direction: column;
         justify-content: space-between;
         cursor: pointer;
+
+        @include vars.mobile {
+          margin-left: 2.5rem;
+          margin-right: 0;
+       }
         
         
 
@@ -65,6 +103,11 @@
           background-color: vars.$mainColor;
           transform-origin: left;
           transition: all 0.8s ease;
+
+          @include vars.mobile {
+            margin:0;
+            
+         }
         }
       }
     }

@@ -24,9 +24,9 @@ const Intro = () => {
   return (
     <div className="intro" id="intro">
       <div className="presentation" id="presentation">
-      <div className="préambule">
-        <p> Bienvenue sur mon site personnel.</p>
-        <p> Je vous souhaite une excellente visite.</p>
+        <div className="préambule">
+          <p> Bienvenue sur mon site personnel.</p>
+          <p> Je vous souhaite une excellente visite.</p>
         </div>
         <h1 className="name">Cédric Leizour</h1>
         <h2 className="dev">Développeur web JavaScript <span className="anim" ref={textRef} /></h2>

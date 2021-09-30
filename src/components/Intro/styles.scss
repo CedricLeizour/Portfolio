@@ -11,16 +11,26 @@
  position: relative;
 
 
+
+
     .presentation {
-      margin-bottom: 3em;
+      
       font-size: 1.5em;
       font-weight: 500;
+      width: 90%;
+      height: 80%;
       opacity: 0.9;
       z-index: 2;
       display: flex;
       align-items: center; 
-      justify-content: center;
+      justify-content: flex-start;
       flex-direction: column;
+
+      @include vars.mobile {
+        text-align: center;
+        width: 100%;
+     }
+     
   
 
       .préambule {
@@ -30,30 +40,36 @@
         font-size: 0.5em;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        margin-bottom: 5em;
+        margin-bottom: 6em;
         flex-direction: column;
         letter-spacing: 1px;
-        opacity: 0.9;  
-      }
+        opacity: 0.9;
+
+        @include vars.mobile {
+          font-size: 18px;
+          line-height: 2rem;
+       }       
+      }        
       
-      
-      .bienvenue {
-        font-size: 0.5em;
-        margin-bottom: 4em;
-        
-        
-        
-      }
       .name{
         font-size: 1.2em;
         margin-bottom: 0.2em;
-        color: orange ;       
+        color: orange ; 
+        
+        @include vars.mobile {
+          font-size: 45px;
+          margin-top: 1rem;
+          
+       }
       }
 
       .dev {
         font-size: 0.5em;
         font-style: italic; 
+
+        @include vars.mobile {
+          font-size: 17px;
+       }
       }
 
       .anim {
@@ -83,11 +99,12 @@
   width: 100%;
   left: 50%;
   top: 50%;
-  height: 100%;
+  height: 99.5%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 1;
   opacity: 0.7;
+  border: none;
  }
  
 }
