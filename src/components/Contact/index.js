@@ -43,8 +43,8 @@ const Contact = () => {
         <img src={Image} alt="" />
       </div>
       <div className="right">
-        <h2>Contact</h2>
         <form className="contact-form" onSubmit={handleSubmit}>
+        <h2>Contact</h2>  
         <div className="contact-input">
         <label className="contact-label" for="name"> Votre nom : </label>
           <input
@@ -54,6 +54,7 @@ const Contact = () => {
             value={name}
             placeholder="Votre nom"
             required="true"
+            className="input"
           />
         </div>
         <div className="contact-input">
@@ -65,6 +66,7 @@ const Contact = () => {
             value={email}
             placeholder="Votre adresse mail"
             required="true"
+            className="input"
           />
         </div>
         <div className="contact-input">

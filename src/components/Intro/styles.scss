@@ -29,7 +29,14 @@
       @include vars.mobile {
         text-align: center;
         width: 100%;
+        
      }
+
+     @include vars.tablette {
+      text-align: center;
+      width: 100%;
+      
+   }
      
   
 
@@ -45,31 +52,57 @@
         letter-spacing: 1px;
         opacity: 0.9;
 
+        @include vars.tablette {
+          font-size: 40px;
+          width: 95%;
+          line-height: 3rem;
+          
+       }
+
         @include vars.mobile {
           font-size: 18px;
           line-height: 2rem;
-       }       
+          width: 100%;
+          letter-spacing: normal;
+       }
+       
       }        
       
       .name{
         font-size: 1.2em;
         margin-bottom: 0.2em;
         color: orange ; 
+       
         
+        @include vars.tablette {
+          font-size: 100px;
+          margin-top: 20px;
+          
+       }
         @include vars.mobile {
           font-size: 45px;
           margin-top: 1rem;
           
        }
+
+      
       }
 
       .dev {
         font-size: 0.5em;
         font-style: italic; 
 
+        @include vars.tablette {
+          font-size: 40px;
+          width: 100%;
+          
+       }
+
         @include vars.mobile {
           font-size: 17px;
        }
+
+      
       }
 
       .anim {
@@ -99,7 +132,7 @@
   width: 100%;
   left: 50%;
   top: 50%;
-  height: 99.5%;
+  height: 99.8%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 1;
