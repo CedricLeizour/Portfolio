@@ -18,3 +18,19 @@ $width:767px;
 }
 
 
+$height:568px;
+
+
+@mixin mobile-small {
+  @media (max-height: #{$height}){
+    @content
+  }
+}
+
+$tablette-height:768px;
+
+@mixin tablette-small {
+  @media (max-height: #{$tablette-height}){
+    @content
+  }
+}

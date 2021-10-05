@@ -78,7 +78,7 @@ const Contact = () => {
               id="message"
             />
           </div>
-          <button type="submit">Envoyer</button>
+          <button className="button" type="submit">Envoyer</button>
           <span> {thanks} </span>
         </form>
       </div>

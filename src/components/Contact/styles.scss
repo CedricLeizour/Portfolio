@@ -79,13 +79,19 @@
       
    }
 
-  
+   @include vars.mobile-small {
+    height: 100%;
+    width: 90%;
+   
+    
+    
+ }
 
    
 
     .contact-form {
       width: 50%;
-      height: 70%;
+      height: 80%;
       position: relative;
       display: flex;
       flex-direction: column;
@@ -99,8 +105,7 @@
       @include vars.tablette {
         height: 60%;
         width: 90%;
-        
-        
+               
      }
 
       @include vars.mobile {
@@ -109,9 +114,31 @@
         border-radius: 0;
         border: none;
         box-shadow: none;
-        
-        
+                
      }
+
+     @include vars.mobile-small {
+      height: 100%;
+      width: 90%;
+      border-radius: 0;
+      border: none;
+      box-shadow: none;
+      
+      
+   }
+
+   @include vars.tablette-small {
+    height: 90%;
+    width: 90%;
+    
+    
+    
+    
+ }
+
+
+
+
 
      h2 {
       font-size: 2rem;
@@ -132,6 +159,13 @@
         font-size:1.8rem;
 
      }
+
+     @include vars.mobile-small {
+      margin-top: 3px;
+      font-size:1.6rem;
+
+   }
+
   
       
   }
@@ -207,7 +241,7 @@
 
       
 
-      button {
+      .button {
         width: 150px;
         height: 40px;
         color: white;
@@ -218,8 +252,25 @@
         cursor: pointer;
         position: absolute;
         margin-bottom: 1rem;
+        font-size: 1em;
         bottom: 0;
 
+        
+        @include vars.tablette {
+          font-size: 15px;
+          
+       }
+
+        @include vars.mobile {
+          font-size: 10px;
+          
+       }
+
+       @include vars.mobile-small {
+        font-size: 10px;
+        margin-bottom: 0.3em;
+        
+     }
         &:focus {
           outline: none;
         }
@@ -237,12 +288,14 @@
         @include vars.tablette {
           font-size: 20px;
           margin-bottom: 10px;
+          width: 100%;
 
        }
 
         @include vars.mobile {
           font-size: 11px;
-          margin-bottom: 15px;
+          margin-bottom: 20px;
+          width : 100%
 
        }
       }

@@ -36,6 +36,7 @@
         
         @include vars.mobile {
           margin:0;
+          font-size: 33px;
           
        }
       }
@@ -61,7 +62,7 @@
           margin-right: 5px;
 
           @include vars.mobile {
-            font-size: 38px;
+            font-size: 35px;
          }
         }
 
@@ -70,7 +71,7 @@
           margin-right: 5px;
 
           @include vars.mobile {
-            font-size: 37px;
+            font-size: 35px;
          }
           
         }
@@ -101,7 +102,7 @@
         cursor: pointer;
 
         @include vars.mobile {
-          margin-left: 2.5rem;
+          margin-left: 1.1rem;
           margin-right: 0;
        }
         

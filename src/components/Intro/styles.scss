@@ -65,6 +65,12 @@
           width: 100%;
           letter-spacing: normal;
        }
+
+       @include vars.mobile-small {
+        font-size: 16px;
+        margin-top: 0.4rem;
+        letter-spacing: normal;
+     }
        
       }        
       
@@ -85,6 +91,11 @@
           
        }
 
+       @include vars.mobile-small {
+        font-size: 40px;
+        margin-top: 0.8rem;
+     }
+
       
       }
 
@@ -102,6 +113,9 @@
           font-size: 17px;
        }
 
+       @include vars.mobile-small {
+        font-size: 15px;
+     }
       
       }
 
