@@ -65,6 +65,16 @@
          }
         }
 
+        .icon-cv {
+          font-size: 26px;
+          margin-right: 5px;
+
+          @include vars.mobile {
+            font-size: 37px;
+         }
+          
+        }
+
         .profil {
           font-size: 15px;
           font-weight: 500;
@@ -76,8 +86,7 @@
             display: none;
          }
         }
-
-        
+   
     }
     }
 

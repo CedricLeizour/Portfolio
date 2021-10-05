@@ -61,10 +61,17 @@ module.exports = {
           outputPath: 'fonts/',
         },
       },
-
+       // Documents
+       {
+        test: /\.pdf$/,
+        loader: 'file-loader',
+        options: {
+          outputPath: 'documents/',
+        },
+      },
       // Images
       {
-        test: /\.(ico|gif|png|jpe?g|webp|svg)$/i,
+        test: /\.(ico|jpg|gif|png|jpe?g|webp|svg)$/i,
         use: [
           {
             loader: 'file-loader',
@@ -74,6 +81,7 @@ module.exports = {
           },
         ],
       },
+      
       {
         test: /\.mp3$/,
         loader: 'file-loader',

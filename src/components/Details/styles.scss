@@ -255,7 +255,7 @@
 
             @include vars.mobile {     
               letter-spacing: normal;
-              font-size: 13px;
+              font-size: 12px;
               margin: 0.5em;
            }  
           }
@@ -273,6 +273,7 @@
               justify-content: space-around;
               
               
+              
            }
 
             @include vars.mobile {
@@ -287,13 +288,13 @@
             .button-link {
               display: flex;
               font-size: 1rem;
-              margin: 2rem;
+              margin: 1rem;
               margin-bottom: 10px;
               justify-content: center;
               align-items: center;
               text-align: center;
-              min-width: 100px;
-              width: 50%;
+              min-width: 80px;
+              width: 35%;
               height: 100%;
               color: white;
               background-color: vars.$mainColor;
@@ -316,7 +317,7 @@
              }
 
               @include vars.mobile {
-                width: 40%;
+                width: 45%;
                 height: 50%;
                 text-align: center;
                 display: flex;

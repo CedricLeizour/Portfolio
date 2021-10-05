@@ -2,52 +2,52 @@ const Skills = [
   {
     id: 1,
     title: 'React',
-    img: 'src/assets/images/React.png',
+    img: 'https://zupimages.net/up/21/40/5e6a.png',
   },
   {
     id: 2,
     title: 'JavaScript',
-    img:'src/assets/images/JavaScript.png',
+    img:'https://zupimages.net/up/21/40/ed2i.png',
   },
   {
     id: 3,
     title: 'Redux',
-    img:'src/assets/images/redux.png',
+    img:'https://zupimages.net/up/21/40/e713.png',
   },
   {
     id: 4,
     title: 'HTML5',
-    img:'src/assets/images/html.png',
+    img:'https://zupimages.net/up/21/40/364k.png',
   },
   {
     id: 5,
     title: 'CSS3',
-    img:'src/assets/images/Css.png',
+    img:'https://zupimages.net/up/21/40/97bw.png',
   },
   {
     id: 6,
     title: 'Sass',
-    img:'src/assets/images/sass.png',
+    img:'https://zupimages.net/up/21/40/gfzm.png',
   },
   {
     id: 7,
     title: 'NodeJS',
-    img:'src/assets/images/node.png',
+    img:'https://zupimages.net/up/21/40/1zyc.png',
   },
   {
     id: 8,
     title: 'PostgreSQL',
-    img:'src/assets/images/psql.png',
+    img:'https://zupimages.net/up/21/37/nh4o.png',
   },
   {
     id: 9,
     title: 'Express',
-    img:'src/assets/images/Expressjs.png',
+    img:'https://zupimages.net/up/21/40/yoih.png',
   },
   {
     id: 10,
     title: 'Github',
-    img:'src/assets/images/github.png',
+    img:'https://zupimages.net/up/21/40/mj7c.png',
   },
 ];
 

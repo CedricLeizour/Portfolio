@@ -15,7 +15,7 @@
    }
 
     @include vars.mobile {     
-      font-size: 35px;   
+      font-size: 32px;   
    }
 
   }
@@ -44,7 +44,7 @@
     
 
     .element {
-      padding: 2em;
+      padding: 1em;
       border: 2px solid vars.$mainColor;
       border-radius: 20px;
       display: flex;
@@ -52,7 +52,7 @@
       min-width: 5%;
       width: 20%;
       height: 20%;
-      margin: 1em;
+      margin: 0.8em;
       justify-content: center;
       align-items: center;
       flex-direction: column;
@@ -62,12 +62,15 @@
         width: 170px;
         height: 170px;
         position: relative;
+        padding:0.2em;
     
      }
 
       @include vars.mobile {     
-        width: 25px;
-        height: 25px;
+        width: 70px;
+        height: 70px;
+        margin:0.2em;
+        padding:0.5em;
         position: relative;
      }
 
@@ -77,11 +80,32 @@
       
       
       .element-icon {
-        width: 40%;
+        width: 100%;
+        height:100%;
+        max-width: 90px;
+        max-height: 70px;
         justify-content: center;
         align-items: center;
-        margin-bottom: 1em;
+        margin-bottom: 0.5em;
         
+        @include vars.tablette{
+          width: 100%;
+          height:100%;
+          max-width: 90px;
+          max-height: 80px;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 1em;
+       }
+        @include vars.mobile {
+          width: 100%;
+          height:100%;
+          max-width: 50px;
+          max-height: 45px;
+          justify-content: center;
+          align-items: center;
+          margin-bottom: 0;
+       }
       }
 
       .element-name {

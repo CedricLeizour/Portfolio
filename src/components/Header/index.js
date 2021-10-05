@@ -1,7 +1,7 @@
 // == Import npm
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { GitHub, LinkedIn } from '@material-ui/icons';
+import { GitHub, LinkedIn, AssignmentInd } from '@material-ui/icons';
+import CV from 'src/assets/documents/Cv Cédric Leizour.pdf';
 
 // == Import
 import './styles.scss';
@@ -14,13 +14,17 @@ const Header = ({ menuOpen, setMenuOpen }) => (
       <div className="left">
         <a href="/" className="logo">C.L</a>
         <div className="itemContainer">
-        <a href='https://github.com/CedricLeizour'>
-         <GitHub className="icon-github" /><span className="profil">Profil GitHub</span></a>
+          <a href='https://github.com/CedricLeizour'>
+            <GitHub className="icon-github" /><span className="profil">Profil GitHub</span></a>
         </div>
         <div className="itemContainer">
           <a href='https://www.linkedin.com/in/cédric-leizour/'>
             <LinkedIn className="icon-linkedin" /><span className="profil">Profil LinkedIn</span>
           </a>
+        </div>
+        <div className="itemContainer">
+          <a href={CV} download>
+            <AssignmentInd className="icon-cv" /><span className="profil">Mon CV</span></a>
         </div>
       </div>
       <div className="right">

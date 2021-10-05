@@ -10,6 +10,7 @@ import {
 } from '../../projectsData';
 import DetailsList from './detailsList';
 
+
 // == Import
 import './styles.scss';
 
@@ -82,7 +83,7 @@ const Details = () => {
           </div>
           <div className="right">
             <div className="content">
-            <h3 className="title">{projectsData.title}</h3>
+              <h3 className="title">{projectsData.title}</h3>
               <p className="details-title">Description du projet</p>
               <p className="details-content">{projectsData.description}</p>
               <p className="details-title">Technologies utilisées</p>
@@ -90,8 +91,8 @@ const Details = () => {
               {projectsData.contexte && <p className="details-title">Contexte</p>}
               {projectsData.contexte && <p className="details-content">{projectsData.contexte}</p>}
               <div className="links">
-              {projectsData.link && <span className="button-link"><a href={projectsData.link}>Voir le projet en ligne</a></span>}
-              <span className="button-link"><a href={projectsData.repo}>Voir le repository Github</a></span>
+              {projectsData.link &&<a href={projectsData.link} className="button-link"> <span >Voir le projet en ligne</span></a>}
+              <a href={projectsData.repo} className="button-link"><span>Voir le repository Github</span></a>
             </div>
             </div>
           </div>
