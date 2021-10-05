@@ -64,7 +64,9 @@ const Portfolio = () => {
         {AllProjects && data.map((projectsData) => (
           <div className="item">
             <img src={projectsData.image} alt="projet" />
-            <h3>{projectsData.title}</h3>
+            <a href={projectsData.link || projectsData.repo} className="title">
+              {projectsData.title}
+            </a>
           </div>
         ))}
       </div>
