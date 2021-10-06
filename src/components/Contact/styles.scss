@@ -19,9 +19,7 @@
       width: 100%;
       display: flex;
       align-items: flex-start;
-   }
-
-  
+  }
 
     img {
       
@@ -40,9 +38,9 @@
         display: flex;
         align-items: flex-start;
         
-     }
+    }
 
-     @include vars.tablette-small {
+      @include vars.tablette-small {
       width: 280px;
       height: 350px;
       margin-left: 0;
@@ -50,7 +48,7 @@
       display: flex;
       align-items: flex-start;
       
-   }
+  }
 
       @include vars.mobile {
         width: 130px;
@@ -60,9 +58,7 @@
         display: flex;
         align-items: flex-start;
         
-     }
-
-     
+    } 
     }
 
     
@@ -78,31 +74,27 @@
     margin-right: 50px;
     
 
-    @include vars.tablette {
+      @include vars.tablette {
       margin:1rem;
       height: 100%;
       width: 100%;
       
       
-   }
-    @include vars.mobile {
+  }
+      @include vars.mobile {
       margin:0;
       height: 75%;
       width: 100%;
       
       
-   }
+  }
 
-   @include vars.mobile-small {
+      @include vars.mobile-small {
     height: 100%;
     width: 85%;
     margin-right: 5px;
-   
-    
-    
- }
-
-   
+  
+}
 
     .contact-form {
       width: 50%;
@@ -121,8 +113,7 @@
       @include vars.tablette {
         height: 60%;
         width: 85%;
-               
-     }
+    }
 
       @include vars.mobile {
         height: 90%;
@@ -130,10 +121,9 @@
         border-radius: 0;
         border: none;
         box-shadow: none;
-               
-     }
+    }
 
-     @include vars.mobile-small {
+    @include vars.mobile-small {
       height: 100%;
       width: 85%;
       border-radius: 0;
@@ -141,22 +131,22 @@
       box-shadow: none;
       
       
-   }
+  }
 
-   @include vars.tablette-small {
+  @include vars.tablette-small {
     height: 90%;
     width: 90%;
     
     
     
     
- }
+}
 
 
 
 
 
-     h2 {
+    h2 {
       font-size: 2rem;
       color: vars.$mainColor;
       font-weight: bold;
@@ -168,19 +158,19 @@
         margin-top: 15px;
         font-size: 30px;
 
-     }
+    }
 
       @include vars.mobile {
         margin-top: 10px;
         font-size:1.8rem;
 
-     }
+    }
 
-     @include vars.mobile-small {
+    @include vars.mobile-small {
       margin-top: 3px;
       font-size:1.6rem;
 
-   }
+  }
 
   
       
@@ -199,29 +189,28 @@
           width: 70%;
           
           
-       }
+      }
         @include vars.mobile {
           width: 80%;
           
-       }
+      }
 
-       .input {
-         padding: 0.5rem;
-         height: 100%;
-         display: block;
-         border: 1px solid vars.$mainColor;
-         
+      .input {
+        padding: 0.5rem;
+        height: 100%;
+        display: block;
+        border: 1px solid vars.$mainColor;
 
-         @include vars.tablette {
+        @include vars.tablette {
           padding:1px;
           
-       }
+      }
 
         @include vars.mobile {
           padding: 2px;
           
-       }
-       }
+        }
+      }
 
         textarea {
           margin-top: 0;
@@ -239,7 +228,7 @@
             height:70px;
             
             
-         }
+        }
         }
 
         .contact-label {
@@ -250,15 +239,14 @@
           @include vars.tablette {
             font-size: 22px;
             
-         }
+        }
 
           @include vars.mobile {
             font-size: 13px;
             
-         }
         }
-        
-      }
+      }   
+    }
 
       
 
@@ -277,21 +265,21 @@
         bottom: 0;
 
         
-        @include vars.tablette {
+      @include vars.tablette {
           font-size: 15px;
           
-       }
+    }
 
-        @include vars.mobile {
+      @include vars.mobile {
           font-size: 10px;
           
-       }
+    }
 
-       @include vars.mobile-small {
+      @include vars.mobile-small {
         font-size: 10px;
         margin-bottom: 0.3em;
         
-     }
+    }
         &:focus {
           outline: none;
         }
@@ -311,15 +299,15 @@
           margin-bottom: 10px;
           width: 100%;
 
-       }
+      }
 
         @include vars.mobile {
           font-size: 11px;
           margin-bottom: 20px;
           width : 100%
 
-       }
       }
     }
   }
+}
 }

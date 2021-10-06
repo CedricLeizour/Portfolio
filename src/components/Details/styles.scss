@@ -11,7 +11,7 @@
     font-size: 50px;
 
     @include vars.tablette {     
-      font-size: 60px;
+      font-size: 40px;
       text-align: center;
       margin-bottom: 5px;   
    }
@@ -55,7 +55,7 @@
       @include vars.tablette {
         display: flex;     
         width: 27%;
-        font-size: 20px;
+        font-size: 17px;
         text-align: center;
         padding: 0.5em;
         margin: 0.4em; 
@@ -170,10 +170,11 @@
           align-items: center;
           flex-direction: column;
           margin-right: 4rem;
+        
 
 
           @include vars.tablette {
-            width: 80%;
+            width: 90%;
             margin-right: 0;
             
               
@@ -206,13 +207,13 @@
             margin-top: 3rem;
 
             @include vars.tablette {     
-              font-size: 35px;
+              font-size: 30px;
               text-align: center;
               margin-top: 1rem; 
            }
 
             @include vars.mobile {     
-              font-size: 28px;
+              font-size: 25px;
               text-align: center;
               margin-top: 0.5rem; 
            }
@@ -250,7 +251,7 @@
             letter-spacing: 1px;
 
             @include vars.tablette {     
-              font-size: 17px;
+              font-size: 15px;
               margin: 0.5em;
               letter-spacing: normal;
 

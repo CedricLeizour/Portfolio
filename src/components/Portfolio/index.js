@@ -1,6 +1,8 @@
 // == Import npm
 import React, { useState, useEffect } from 'react';
-import { AllProjects, JavascriptProjects, ReactProjects, ReactReduxProjects } from '../../projectsData';
+import {
+  AllProjects, JavascriptProjects, ReactProjects, ReactReduxProjects,
+} from '../../projectsData';
 import PortfolioList from './portfolioList';
 
 // == Import
@@ -31,16 +33,16 @@ const Portfolio = () => {
 
   useEffect(() => {
     switch (selected) {
-      case "all":
+      case 'all':
         setData(AllProjects);
         break;
-      case "js":
+      case 'js':
         setData(JavascriptProjects);
         break;
-      case "react":
+      case 'react':
         setData(ReactProjects);
         break;
-      case "react-redux":
+      case 'react-redux':
         setData(ReactReduxProjects);
         break;
       default:

@@ -57,7 +57,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact-input">
-          <label className="contact-label" for="name"> Votre email : </label>
+            <label className="contact-label" for="name"> Votre email : </label>
             <input
               onChange={(event) => setEmail(event.target.value)}
               type="email"
@@ -69,7 +69,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact-input">
-          <label className="contact-label" for="message"> Votre message :</label>
+            <label className="contact-label" for="message"> Votre message :</label>
             <textarea
               onChange={(event) => setMessage(event.target.value)}
               value={message}
