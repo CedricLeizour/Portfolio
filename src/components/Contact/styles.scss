@@ -25,8 +25,8 @@
 
     img {
       
-      width: 300px;
-      height: 400px;
+      width: 450px;
+      height: 550px;
       margin-left: 1rem;
       margin-bottom: 2rem;
       border-radius: 5%;
@@ -76,7 +76,7 @@
     justify-content: center;
     position: relative;
     margin-right: 50px;
-    overflow: auto;
+    
 
     @include vars.tablette {
       margin:1rem;
@@ -87,7 +87,7 @@
    }
     @include vars.mobile {
       margin:0;
-      height: 95%;
+      height: 75%;
       width: 100%;
       
       
@@ -116,6 +116,7 @@
       border: 1px solid vars.$mainColor;
       border-radius: 10%;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      
 
       @include vars.tablette {
         height: 60%;
@@ -129,7 +130,7 @@
         border-radius: 0;
         border: none;
         box-shadow: none;
-                
+               
      }
 
      @include vars.mobile-small {
