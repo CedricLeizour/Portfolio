@@ -3,6 +3,7 @@
 .contact {
   background-color: white;
   display: flex;
+  z-index: -1;
 
   .left {
     flex: 1;
