@@ -76,6 +76,7 @@
     justify-content: center;
     position: relative;
     margin-right: 50px;
+    overflow: auto;
 
     @include vars.tablette {
       margin:1rem;
@@ -233,6 +234,11 @@
           border: 1px solid vars.$mainColor;
           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
           
+          @include vars.mobile {
+            height:70px;
+            
+            
+         }
         }
 
         .contact-label {
