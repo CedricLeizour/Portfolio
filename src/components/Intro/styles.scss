@@ -53,7 +53,7 @@
         opacity: 0.9;
 
         @include vars.tablette {
-          font-size: 40px;
+          font-size: 35px;
           width: 95%;
           line-height: 3rem;
           
@@ -81,7 +81,7 @@
        
         
         @include vars.tablette {
-          font-size: 100px;
+          font-size: 90px;
           margin-top: 20px;
           
        }
@@ -104,7 +104,7 @@
         font-style: italic; 
 
         @include vars.tablette {
-          font-size: 40px;
+          font-size: 35px;
           width: 100%;
           
        }

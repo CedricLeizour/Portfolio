@@ -84,7 +84,8 @@
 
   .container {
     width: 70%;
-    height: 75%;
+    height: 85%;
+    max-height: 60vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -100,7 +101,7 @@
             
    }
     @include vars.mobile {
-      width: 90%;
+      width: 100%;
       height: 100%;
       display: flex;
       justify-content: space-around;
@@ -123,21 +124,22 @@
       position: relative;
       transition: all 0.5s ease;
       cursor: pointer;
+      text-align: center;
 
       @include vars.tablette {
         font-size: 22px;
-        height: 20%;
-        width:30%;
+        height: 180px;
+        width:250px;
         text-align: center;
         margin : 1rem;
                                       
      }
       @include vars.mobile {
         font-size: 10px;
-        height: 15%;
-        width:35%;
+        height: 80px;
+        width:130px;
         text-align: center;
-        margin : 1rem;
+        margin : 0.5rem;
         
          
               
@@ -147,7 +149,7 @@
       .title {
         position: absolute;
         font-size: 1.2em;
-        max-width: 80%;
+        max-width: 90%;
         align-items: center;
         justify-content: center;
       }

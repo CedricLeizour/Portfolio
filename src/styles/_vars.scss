@@ -34,3 +34,11 @@ $tablette-height:768px;
     @content
   }
 }
+
+$laptop-height:1024px;
+
+@mixin laptop {
+  @media (max-height: #{$laptop-height}){
+    @content
+  }
+}
