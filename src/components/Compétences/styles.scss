@@ -9,6 +9,7 @@
 
   .title {
     font-size: 50px;
+    text-align: center;
 
     @include vars.tablette {     
       font-size: 60px;   
@@ -54,6 +55,7 @@
       align-items: center;
       flex-direction: column;
       box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      position: relative;
 
       @include vars.tablette {     
         width: 170px;
@@ -79,7 +81,7 @@
       .element-icon {
         max-width: 100%;
         max-height:100%;
-        min-width: 90px;
+        min-width: 80px;
         padding: 10px;
         justify-content: center;
         align-items: center;
@@ -93,6 +95,16 @@
           padding : 2.2em;
           margin-bottom: 1em;
       }
+
+        @include vars.tablette-small{
+        justify-content: center;
+        align-items: center;
+        max-width: 100%;
+        max-height:100%;
+        padding : 10px;
+        
+      }
+
         @include vars.mobile {
           justify-content: center;
           align-items: center;
@@ -111,17 +123,23 @@
         font-weight: bold;
         font-size: 1em;
         position: absolute;
-        margin-top: 95px;
+        bottom: 5px;
 
         @include vars.tablette {
           font-size: 25px;
           position: absolute;
-          margin-top: 100px;
+          bottom: 5px;
+      }
+
+        @include vars.tablette-small {
+        font-size: 16px;
+        position: absolute;
+        bottom: 5px;
       }
 
         @include vars.mobile {
           position: absolute;     
-          margin-top: 100px;
+          bottom: -25px;
           font-size: 13px;
       } 
       }
