@@ -114,7 +114,7 @@ const Annuaire = [
     title: "Annuaire Github API",
     link: "https://cedricleizour-github-api.netlify.app",
     image: 'https://zupimages.net/up/21/40/j4po.png',
-    description:"Cette application d'annuaire permets de trouver un repo Github via une API, grâce aux mots-clés saisis dans la barre de recherche. Cette application est développée avec React.",
+    description:"Cette application d'annuaire permet de trouver un repo Github via une API, grâce aux mots-clés saisis dans la barre de recherche. Cette application est développée avec React.",
     technos:"JavaScript - React - Axios - Sass - Webpack - Babel - Semantic UI",
     repo:"https://github.com/CedricLeizour/Github-API",
 },
