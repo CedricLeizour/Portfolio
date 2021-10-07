@@ -191,7 +191,7 @@
           justify-content:center;
           align-items: center;
           flex-direction: column;
-          margin-right: 4rem;
+          margin-right: 2rem;
         
 
 
@@ -226,7 +226,7 @@
             justify-content: center;
             color: vars.$mainColor;
             font-weight: bold;
-            margin-top: 3rem;
+            margin-top: 1.5rem;
 
             @include vars.tablette {     
               font-size: 30px;
@@ -255,7 +255,7 @@
             font-size: 1.5rem;
             font-style: italic;
             letter-spacing: 1px;
-            margin-top: 2rem;
+            margin-top: 1.5rem;
 
             @include vars.tablette {     
               font-size: 23px;
@@ -341,7 +341,7 @@
               align-items: center;
               text-align: center;
               min-width: 80px;
-              width: 35%;
+              width: 50%;
               height: 100%;
               color: white;
               background-color: vars.$mainColor;
