@@ -1,34 +1,41 @@
 const AllProjects = [
-
   {
     id: 1,
+    title: "Rock Paper Scissors",
+    link: "https://cedricleizour-rockpaperscissors.netlify.app",
+    image: "https://zupimages.net/up/21/42/vxuz.png",
+    description:"Application permettant de jouer au célèbre \"Pierre, feuilles, ciseaux\", développée avec React",
+  },
+
+  {
+    id: 2,
     title: "To Do List Javascript",
     link: "https://cedricleizour-todolist.netlify.app",
     image: 'https://zupimages.net/up/21/40/dj3r.png',
     description:"Application de todolist, développée en Javascript natif",
   },
   {
-    id: 2,
+    id: 3,
     title: "Converter React",
     link: "https://cedricleizour-converter.netlify.app",
     image: 'https://zupimages.net/up/21/40/zc1t.png',
     description:"Application de convertisseur de monnaie, développée avec React",
   },
   {
-    id: 3,
+    id: 4,
     title: "Annuaire Github API",
     link: "https://cedricleizour-github-api.netlify.app",
     image: 'https://zupimages.net/up/21/40/j4po.png',
     description:"Application d'annuaire permettant de trouver un repo Github via une API, développée avec React",
   },
-  { id: 4,
+  { id: 5,
     title: "Chatroom",
     repo: "https://github.com/CedricLeizour/ChatRoom",
     image: "https://zupimages.net/up/21/40/agq2.png",
     description: "Cette application est une messagerie instantanée avec une fonctionnalité de connexion avec login et mot de passe. Elle nécessite la mise en place d'un serveur socket pour fonctionner, mis à disposition sur mon Github, avec toutes les explications. L'application a été développée avec React Redux.",
     technos: "JavaScript - React - React Redux - Axios - Sass - Webpack - Babel",
   },
-  {id: 5,
+  {id: 6,
     title: "Projet Oboardgame",
     repo: "https://github.com/CedricLeizour/Projet-Oboardgame",
     image: "https://zupimages.net/up/21/40/izhu.png",
@@ -52,13 +59,20 @@ const JavascriptProjects = [
 const ReactProjects = [
   {
     id: 1,
+    title: "Rock Paper Scissors",
+    link: "https://cedricleizour-rockpaperscissors.netlify.app",
+    image: "https://zupimages.net/up/21/42/vxuz.png",
+    description:"Application permettant de jouer au célèbre \"Pierre, feuilles, ciseaux\", développée avec React",
+  },
+  {
+    id: 2,
     title: "Converter React",
     link: "https://cedricleizour-converter.netlify.app",
     image: "https://zupimages.net/up/21/40/zc1t.png",
     description:"Application de convertisseur de monnaie, développée avec React",
   },
   {
-    id: 2,
+    id: 3,
     title: "Annuaire Github API",
     link: "https://cedricleizour-github-api.netlify.app",
     image: "https://zupimages.net/up/21/40/j4po.png",
@@ -84,6 +98,17 @@ const ReactReduxProjects = [
     },
 ];
 
+const RockPaperScissors = [
+  { id: 1,
+    title: "Rock Paper Scissors",
+    link: "https://cedricleizour-rockpaperscissors.netlify.app",
+    repo: "https://github.com/CedricLeizour/Rock-Paper-Scissors-React",
+    image: "https://zupimages.net/up/21/42/vxuz.png",
+    description:"Application permettant de jouer au célèbre \"Pierre, feuilles, ciseaux\", développée avec React",
+    contexte:"J'ai développé ce projet dans le cadre d'un challenge proposé par le site Frontend Mentor.",
+    technos: "JavaScript - React - React-Router - Sass - Webpack - Babel",
+  },
+];
 const ToDoList = [
   {
     id: 1,
@@ -121,17 +146,17 @@ const Annuaire = [
 ];
 
 const Chatroom = [
-    {id: 1,
+  {id: 1,
     title: "Chatroom",
     repo: "https://github.com/CedricLeizour/ChatRoom",
     image: "https://zupimages.net/up/21/40/agq2.png",
     description: "Cette application est une messagerie instantanée avec une fonctionnalité de connexion avec login et mot de passe. Elle nécessite la mise en place d'un serveur socket pour fonctionner, mis à disposition sur mon Github, avec toutes les explications. L'application a été développée avec React Redux.",
     technos: "JavaScript - React - React Redux - Axios - Sass - Webpack - Babel",
-    },
+  },
 ];
 
 const Oboardgame = [
-  {id: 1,
+  { id: 1,
     title: "Projet Oboardgame",
     repo: "https://github.com/CedricLeizour/Projet-Oboardgame",
     image: "https://zupimages.net/up/21/40/izhu.png",
@@ -146,6 +171,7 @@ export {
   JavascriptProjects,
   ReactProjects,
   ReactReduxProjects,
+  RockPaperScissors,
   ToDoList,
   Converter,
   Annuaire,

@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   AllProjects,
+  RockPaperScissors,
   ToDoList,
   Converter,
   Annuaire,
@@ -15,10 +16,14 @@ import './styles.scss';
 
 // == Composant
 const Details = () => {
-  const [selected, setSelected] = useState('todolist');
+  const [selected, setSelected] = useState('rockpaperscissors');
   const [data, setData] = useState([]);
 
   const list = [
+    {
+      id: 'rockpaperscissors',
+      title: 'Rock Paper Scissors',
+    },
     {
       id: 'todolist',
       title: 'To do List Javascript',
@@ -43,6 +48,9 @@ const Details = () => {
 
   useEffect(() => {
     switch (selected) {
+      case ('rockpaperscissors'):
+        setData(RockPaperScissors);
+        break;
       case ('todolist'):
         setData(ToDoList);
         break;
@@ -59,7 +67,7 @@ const Details = () => {
         setData(Oboardgame);
         break;
       default:
-        setData(ToDoList);
+        setData(RockPaperScissors);
     }
   }, [selected]);
   return (
@@ -90,7 +98,7 @@ const Details = () => {
               {projectsData.contexte && <p className="details-title">Contexte</p>}
               {projectsData.contexte && <p className="details-content">{projectsData.contexte}</p>}
               <div className="links">
-                {projectsData.link && <a href={projectsData.link} className="button-link"> <span >Voir le projet en ligne</span></a>}
+                {projectsData.link && <a href={projectsData.link} className="button-link"> <span>Voir le projet en ligne</span></a>}
                 <a href={projectsData.repo} className="button-link"><span>Voir le repository Github</span></a>
               </div>
             </div>
