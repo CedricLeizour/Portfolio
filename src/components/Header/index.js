@@ -1,7 +1,7 @@
 // == Import npm
 import React from 'react';
 import { GitHub, LinkedIn, AssignmentInd } from '@material-ui/icons';
-import CV from '../../assets/documents/CV Cédric Leizour.pdf';
+import CV from '../../assets/documents/CV Cedric Leizour.pdf';
 
 // == Import
 import './styles.scss';
