@@ -6,8 +6,9 @@ body {
   margin: 0;
   overflow-x: hidden;
   overflow-y: hidden;
-  scroll-snap-type: y mandatory;
-  
+  /* scroll-snap-type: y mandatory;
+  scroll-snap-stop: normal; */
+ /*  scroll-behavior: smooth; */
 }
 
 /* 

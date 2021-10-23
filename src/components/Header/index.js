@@ -23,7 +23,7 @@ const Header = ({ menuOpen, setMenuOpen }) => (
           </a>
         </div>
         <div className="itemContainer">
-          <a href={CV} download>
+          <a href={CV}>
             <AssignmentInd className="icon-cv" /><span className="profil">Mon CV</span></a>
         </div>
       </div>
