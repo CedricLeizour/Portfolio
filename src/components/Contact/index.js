@@ -39,13 +39,21 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src={Image} alt="Cédric Leizour" />
+        <div className="propos">
+          <img src={Image} alt="Cédric Leizour" className="avatar" />
+          <p className="propos-paragraphe">En attendant de trouver un nouveau challenge professionnel dans une structure qui saura me faire confiance, je continue à me former quotidiennement sur différentes technologies, principalement avec le langage JavaScript, et j’adore ça !</p>
+          <p className="propos-paragraphe">
+            Si cette visite vous a plu, que vous avez des projets à me proposer,
+            des questions sur mon parcours ou encore une bonne recette de Pasteis de Nata à me communiquer,
+            n'hésitez pas à me contacter 😀
+          </p>
+        </div>
       </div>
       <div className="right">
         <form className="contact-form" onSubmit={handleSubmit}>
           <h2>Contact</h2>
           <div className="contact-input">
-            <label className="contact-label" for="name"> Votre nom : </label>
+            <label className="contact-label" htmlFor="name"> Votre nom : </label>
             <input
               onChange={(event) => setName(event.target.value)}
               type="text"
@@ -57,7 +65,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact-input">
-            <label className="contact-label" for="name"> Votre email : </label>
+            <label className="contact-label" htmlFor="email"> Votre email : </label>
             <input
               onChange={(event) => setEmail(event.target.value)}
               type="email"
@@ -69,7 +77,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact-input">
-            <label className="contact-label" for="message"> Votre message :</label>
+            <label className="contact-label" htmlFor="message"> Votre message :</label>
             <textarea
               onChange={(event) => setMessage(event.target.value)}
               value={message}

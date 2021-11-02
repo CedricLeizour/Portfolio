@@ -1,6 +1,7 @@
 // == Import npm
 import React, { useEffect, useRef } from 'react';
 import VideoIntro from 'src/assets/videos/test.mp4';
+import Poster from 'src/assets/images/poster.png';
 import { init } from 'ityped';
 
 // == Import
@@ -31,7 +32,7 @@ const Intro = () => {
         <h1 strong className="name">Cédric Leizour</h1>
         <h2 strong className="dev">Développeur web JavaScript <span className="anim" ref={textRef} /></h2>
       </div>
-      <video autoPlay loop muted id="videoBG">
+      <video autoPlay loop muted id="videoBG" poster={Poster}>
         <source src={VideoIntro} type="video/mp4" />
       </video>
     </div>
