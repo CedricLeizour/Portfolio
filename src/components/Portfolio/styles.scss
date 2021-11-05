@@ -12,6 +12,7 @@
 
   h1 {
     font-size: 50px;
+    color: vars.$mainColor;
 
     @include vars.tablette {     
       font-size: 40px;
