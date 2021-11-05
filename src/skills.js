@@ -1,13 +1,13 @@
 const Skills = [
   {
     id: 1,
-    title: 'React',
-    img: 'https://zupimages.net/up/21/40/5e6a.png',
+    title: 'JavaScript',
+    img:'https://zupimages.net/up/21/40/ed2i.png',
   },
   {
     id: 2,
-    title: 'JavaScript',
-    img:'https://zupimages.net/up/21/40/ed2i.png',
+    title: 'React',
+    img: 'https://zupimages.net/up/21/40/5e6a.png',
   },
   {
     id: 3,
