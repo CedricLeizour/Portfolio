@@ -3,7 +3,8 @@
 .header {
   width: 100%;
   height: 70px;
-  background: white;/* linear-gradient(to right, #96c4ff, #b3cdff, #cad7ff, #dee2fe, #eeeefe, #eeeefe, #eeeefe, #eeeefe, #dee2fe, #cad7ff, #b3cdff, #96c4ff); */
+  background: linear-gradient(to right, #96c4ff, #b3cdff, #cad7ff, #dee2fe, #eeeefe, #eeeefe, #eeeefe, #eeeefe, #dee2fe, #cad7ff, #b3cdff, #96c4ff);
+  /* background: linear-gradient(to right, #96c4ff, #b3cdff, #cad7ff, #dee2fe, #eeeefe, #eeeefe, #eeeefe, #eeeefe, #dee2fe, #cad7ff, #b3cdff, #96c4ff); */
   color: vars.$mainColor;
   position: fixed;
   top: 0;
