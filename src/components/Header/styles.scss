@@ -3,7 +3,7 @@
 .header {
   width: 100%;
   height: 70px;
-  background-color: white;
+  background: white;/* linear-gradient(to right, #96c4ff, #b3cdff, #cad7ff, #dee2fe, #eeeefe, #eeeefe, #eeeefe, #eeeefe, #dee2fe, #cad7ff, #b3cdff, #96c4ff); */
   color: vars.$mainColor;
   position: fixed;
   top: 0;
@@ -33,6 +33,10 @@
         text-decoration: none;
         color: inherit;
         margin-right: 3rem;
+
+        &:hover {
+          transform: scale(1.1);
+        }
         
         @include vars.mobile {
           margin:0;
@@ -45,6 +49,10 @@
         display: flex;
         align-items: center;
         margin-left: 30px;
+
+        &:hover {
+          transform: scale(1.1);
+        }
         
       
         .icon-github {
@@ -101,6 +109,10 @@
         justify-content: space-between;
         cursor: pointer;
 
+        &:hover {
+          transform: scale(1.1);
+        }
+
         @include vars.mobile {
           margin-left: 1.1rem;
           margin-right: 0;
@@ -125,7 +137,7 @@
   }
 
   &.active {
-    background-color: vars.$mainColor;
+    background: vars.$mainColor;
     color: white;
 
     .burger {

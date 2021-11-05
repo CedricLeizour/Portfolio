@@ -15,10 +15,10 @@ const Intro = () => {
     init(textRef.current, {
       showCursor: true,
       typeSpeed: 100,
-      backSpeed: 50,
+      backSpeed: 60,
       backDelay: 1000,
-      startDelay: 800,
-      strings: ['motivé', 'curieux', 'passionné', 'disponible'],
+      startDelay: 1000,
+      strings: ['motivé', 'curieux', 'passionné', 'disponible', 'sympa ;)'],
     });
   }, []);
 
