@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import {
   AllProjects,
+  WhatMovieWatching,
   RockPaperScissors,
   ToDoList,
   Converter,
@@ -16,10 +17,14 @@ import './styles.scss';
 
 // == Composant
 const Details = () => {
-  const [selected, setSelected] = useState('rockpaperscissors');
+  const [selected, setSelected] = useState('whatmoviewatching');
   const [data, setData] = useState([]);
 
   const list = [
+    {
+      id: 'whatmoviewatching',
+      title: 'What Movie Watching ?',
+    },
     {
       id: 'rockpaperscissors',
       title: 'Rock Paper Scissors',
@@ -48,6 +53,9 @@ const Details = () => {
 
   useEffect(() => {
     switch (selected) {
+      case ('whatmoviewatching'):
+        setData(WhatMovieWatching);
+        break;
       case ('rockpaperscissors'):
         setData(RockPaperScissors);
         break;
@@ -67,7 +75,7 @@ const Details = () => {
         setData(Oboardgame);
         break;
       default:
-        setData(RockPaperScissors);
+        setData(WhatMovieWatching);
     }
   }, [selected]);
   return (

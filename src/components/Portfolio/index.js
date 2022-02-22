@@ -15,7 +15,7 @@ const Portfolio = () => {
   const list = [
     {
       id: 'all',
-      title: 'Tous mes projets',
+      title: 'Mes derniers projets',
     },
     {
       id: 'js',
@@ -63,7 +63,7 @@ const Portfolio = () => {
         ))}
       </ul>
       <div className="container">
-        {AllProjects && data.map((projectsData) => (
+        {AllProjects && data.slice(0, 6).map((projectsData) => (
           <div className="item">
             <img src={projectsData.image} alt="projet" />
             <a href={projectsData.link || projectsData.repo} className="title">
