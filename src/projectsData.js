@@ -1,9 +1,9 @@
 const AllProjects = [
   {
     id: 1,
-    title: 'What Movie Watching ?',
-    link: 'https://cedricleizour-whatmoviewatching.netlify.app',
-    image: 'https://zupimages.net/up/22/08/svx1.png',
+    title: 'What To Watch ?',
+    link: 'https://cedricleizour-whattowatch.netlify.app',
+    image: 'https://zupimages.net/up/22/08/s4g0.png',
     description: "Application permettant de trouver un ou plusieurs films via la barre de recherche, avec la possibilité d'ajouter/supprimer des films dans sa liste de favoris. Les données proviennent de l'API d'Imdb, l'application est développée avec React",
   },
 
@@ -69,9 +69,9 @@ const JavascriptProjects = [
 const ReactProjects = [
   {
     id: 1,
-    title: 'What Movie Watching ?',
-    link: 'https://cedricleizour-whatmoviewatching.netlify.app',
-    image: 'https://zupimages.net/up/22/08/svx1.png',
+    title: 'What To Watch ?',
+    link: 'https://cedricleizour-whattowatch.netlify.app',
+    image: 'https://zupimages.net/up/22/08/s4g0.png',
     description: "Application permettant de trouver un ou plusieurs films via la barre de recherche, avec la possibilité d'ajouter/supprimer des films dans sa liste de favoris. Les données proviennent de l'API d'Imdb, l'application est développée avec React",
   },
   {
@@ -117,12 +117,12 @@ const ReactReduxProjects = [
   },
 ];
 
-const WhatMovieWatching = [
+const WhatToWatch = [
   {
     id: 1,
-    title: 'What Movie Watching ?',
-    link: 'https://cedricleizour-whatmoviewatching.netlify.app',
-    image: 'https://zupimages.net/up/22/08/svx1.png',
+    title: 'What To Watch ?',
+    link: 'https://cedricleizour-whattowatch.netlify.app',
+    image: 'https://zupimages.net/up/22/08/s4g0.png',
     description: "Application permettant de trouver un ou plusieurs films via la barre de recherche, avec la possibilité d'ajouter/supprimer des films dans sa liste de favoris. Les données proviennent de l'API d'Imdb, l'application est développée avec React",
     technos: 'JavaScript - React - React Router - Axios - Sass - Webpack - Babel',
     repo: 'https://github.com/CedricLeizour/MoviesProject-React',
@@ -205,7 +205,7 @@ export {
   JavascriptProjects,
   ReactProjects,
   ReactReduxProjects,
-  WhatMovieWatching,
+  WhatToWatch,
   RockPaperScissors,
   ToDoList,
   Converter,
